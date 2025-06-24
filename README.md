@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# QR Alimi - Landing Page (Next.js Conversion)
 
-## Getting Started
+This project is a responsive, modern landing page for the **QR Alimi** service. QR Alimi is a platform designed to protect personal information for parked vehicle movement requests by using secure QR codes instead of exposing phone numbers.
 
-First, run the development server:
+This application is a complete conversion of the original single-page static HTML file into a structured, component-based, and performance-optimized Next.js application.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📸 Screenshot
+
+![screencapture-localhost-3000-2025-06-24-23_52_13](https://github.com/user-attachments/assets/61056615-de81-4187-be72-64122284f8a0)
+
+
+## ✨ Features
+
+-   **Component-Based Architecture:** The original static HTML has been broken down into reusable React components for better maintainability and scalability.
+-   **Fully Responsive Design:** Adapts beautifully to desktop, tablet, and mobile screen sizes.
+-   **Interactive Sliders:** Utilizes **Swiper.js** for interactive and autoplaying carousels in the "Community" and "News" sections.
+-   **Engaging Animations & Transitions:** CSS animations for hero section elements and smooth hover effects on cards and buttons.
+-   **Optimized Images:** Leverages the Next.js `<Image>` component for automatic image optimization, improving load times.
+-   **SEO Friendly:** Built with Next.js, providing a strong foundation for Search Engine Optimization.
+
+## 🛠️ Tech Stack
+
+-   **Framework:** [Next.js](https://nextjs.org/) (v13+ with App Router)
+-   **Library:** [React](https://reactjs.org/) (v18)
+-   **Styling:** Plain CSS in `globals.css` (The original project's styling)
+-   **Carousels/Sliders:** [Swiper.js](https://swiperjs.com/)
+-   **Icons:** [Font Awesome](https://fontawesome.com/)
+
+## 🚀 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+You need to have [Node.js](https://nodejs.org/) (version 18.x or later) and a package manager like `npm` or `yarn` installed on your system.
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/Saikumar1801/QR-Alert-Main-Page.git
+    ```
+
+2.  **Navigate to the project directory:**
+    ```sh
+    cd QR-Alert-Main-Page
+    ```
+
+3.  **Install dependencies:**
+    Using npm:
+    ```sh
+    npm install
+    ```
+    Or using yarn:
+    ```sh
+    yarn install
+    ```
+
+4.  **Run the development server:**
+    ```sh
+    npm run dev
+    ```
+
+5.  **Open your browser:**
+    Navigate to [http://localhost:3000](http://localhost:3000) to see the application running.
+
+## 📂 Project Structure
+
+The project follows the standard Next.js App Router structure.
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+qr-alimi-app/
+├── app/
+│   ├── globals.css     # Global styles for the application
+│   ├── layout.js       # The root layout (contains <html> and <body>)
+│   └── page.js         # The main homepage, where all components are assembled
+│
+├── components/         # Contains all reusable React components
+│   ├── Header.js
+│   ├── Hero.js
+│   ├── Problem.js
+│   ├── Solution.js
+│   ├── Performance.js
+│   ├── Community.js
+│   ├── News.js
+│   ├── CTA.js
+│   └── Footer.js
+│
+├── public/
+│   └── images/         # Static assets like logos and images
+│
+└── README.md 
+```
