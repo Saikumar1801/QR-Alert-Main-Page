@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import React from "react";
+import type { Metadata } from "next";
 
 // Font Awesome Configuration
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -13,7 +15,7 @@ export const metadata = {
   description: "A personal information security service that is generated only with the vehicle number and requested through an in-app notification.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode })  {
   return (
     <html lang="ko">
       <body className={inter.className}>{children}</body>
